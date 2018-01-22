@@ -4,6 +4,8 @@ ruby '~> 2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.2'
 
+gem 'bcrypt', platform: :ruby
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,7 +38,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'unicorn'
+  #gem 'unicorn'
   gem 'rails_12factor'
   gem 'fog'
   gem 'fog-aws'
@@ -60,6 +62,8 @@ gem 'auto_html', '~>1.6.4'
 gem 'sanitize'
 
 gem 'active_model_serializers'
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
